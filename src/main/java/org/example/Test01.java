@@ -1,6 +1,9 @@
-package org.core;
+package org.example;
 
 import guo_cam.CameraController;
+import org.core.BaseLineGroup;
+import org.core.Room;
+import org.core.RoomLoader;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.GeometryFactory;
@@ -23,7 +26,7 @@ import java.util.Map;
  */
 public class Test01 extends PApplet {
     public static void main(String[] args) {
-        PApplet.main("org.core.Test01");
+        PApplet.main("org.example.Test01");
     }
 
     CameraController cam;

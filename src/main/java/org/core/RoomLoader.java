@@ -31,7 +31,7 @@ import java.util.List;
  */
 public class RoomLoader extends AnalysisEventListener<Room> {
     List<Room> list = new ArrayList<>();
-    double minArea,maxArea;
+    public double minArea,maxArea;
     public RoomLoader(String path, int n) {
         EasyExcel.read(path, Room.class, this).sheet(n).doRead();
         int num = 0;

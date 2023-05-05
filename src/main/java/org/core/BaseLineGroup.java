@@ -101,7 +101,7 @@ public class BaseLineGroup {
                 baseLines[i].add(line);
             }
             floor++;
-        } while (area < (minArea + maxArea) * 0.5);
+        } while (area < maxArea);  //此处将建筑面积最大化，以便能够更好地进行空间分配运算
         System.out.println("生成了面积容量为" + area + "的走廊空间");
         num_floor = floor;
         allBaseLine = new BaseLine[baseSegments.length][floor];

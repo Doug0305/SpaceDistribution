@@ -109,6 +109,7 @@ public class Test01 extends PApplet {
             baseLineGroup.showClassRoom(this, render, wbRender);
         if (showLight) baseLineGroup.showLight(this, render, wbRender);
         if (showNoise) baseLineGroup.showNoise(this, render, wbRender);
+
         cam.begin2d();
         fill(0);
         textSize(15);

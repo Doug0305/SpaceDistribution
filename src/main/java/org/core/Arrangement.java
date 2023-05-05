@@ -136,7 +136,7 @@ public class Arrangement {
                         GRBLinExpr linExpr = new GRBLinExpr();
                         temp.addTerm(1, vars[i][j][k][l]);
                         model.addGenConstrIndicator(x, 0, temp, GRB.EQUAL, 0, "temp");//temp=0时不存在，x为0；存在为1，x=1
-                        //(5-8)房间最小宽度<=走廊宽度
+                        //(5-8)房间最小宽度<=走廊一侧房间进深
                         linExpr.addTerm(roomList[l].getMin_width(), x);
                         model.addConstr(linExpr, GRB.LESS_EQUAL, oneSides[i][j][k].width, "width");
                     }
